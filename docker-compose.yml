@@ -26,12 +26,12 @@ services:
     restart: on-failure
       
   leafy-front:
-    image: junghoonkim/leafy-frontend:755afc7b80d7086d00449a88579d744e971be791
+    image: junghoonkim/leafy-frontend:70ab708f3591ec15b3983123a5fcad2b53032a5a
     
     environment:
       - BACKEND_HOST=leafy-backend
     ports:
-      - 80:80
+      - 70:80
     depends_on:
       - leafy-backend
     deploy:
